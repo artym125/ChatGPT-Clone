@@ -15,6 +15,7 @@
 		B53A4DEE2C7E81AD0000164E /* ChatListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DED2C7E81AD0000164E /* ChatListState.swift */; };
 		B53A4DF02C7E81CF0000164E /* AppChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DEF2C7E81CF0000164E /* AppChat.swift */; };
 		B53A4DF22C7E81FE0000164E /* AppMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF12C7E81FE0000164E /* AppMessage.swift */; };
+		B53A4DF52C7E831A0000164E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF42C7E831A0000164E /* CoreDataManager.swift */; };
 		B5934DA82C7DCD7200A120F9 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */; };
 		B5934DAB2C7DF74B00A120F9 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = B5934DAA2C7DF74B00A120F9 /* OpenAI */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 		B53A4DED2C7E81AD0000164E /* ChatListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListState.swift; sourceTree = "<group>"; };
 		B53A4DEF2C7E81CF0000164E /* AppChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChat.swift; sourceTree = "<group>"; };
 		B53A4DF12C7E81FE0000164E /* AppMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMessage.swift; sourceTree = "<group>"; };
+		B53A4DF42C7E831A0000164E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 		B53A4DF32C7E823E0000164E /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				B53A4DF42C7E831A0000164E /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				B53A4DF22C7E81FE0000164E /* AppMessage.swift in Sources */,
 				B53A4DEE2C7E81AD0000164E /* ChatListState.swift in Sources */,
 				B51D6E9A2C7DCBD200D83986 /* ChatGPT_CloneApp.swift in Sources */,
+				B53A4DF52C7E831A0000164E /* CoreDataManager.swift in Sources */,
 				B53A4DEB2C7E81210000164E /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
