@@ -8,21 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		B51D6E9A2C7DCBD200D83986 /* ChatGPT_CloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D6E992C7DCBD200D83986 /* ChatGPT_CloneApp.swift */; };
-		B51D6E9C2C7DCBD200D83986 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D6E9B2C7DCBD200D83986 /* ContentView.swift */; };
 		B51D6E9E2C7DCBD400D83986 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D6E9D2C7DCBD400D83986 /* Assets.xcassets */; };
 		B51D6EA12C7DCBD400D83986 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B51D6EA02C7DCBD400D83986 /* Preview Assets.xcassets */; };
-		B51D6EA32C7DCBD400D83986 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51D6EA22C7DCBD400D83986 /* Persistence.swift */; };
 		B51D6EA62C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B51D6EA42C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld */; };
+		B53A4DEB2C7E81210000164E /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DEA2C7E81210000164E /* AppState.swift */; };
+		B53A4DEE2C7E81AD0000164E /* ChatListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DED2C7E81AD0000164E /* ChatListState.swift */; };
+		B53A4DF02C7E81CF0000164E /* AppChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DEF2C7E81CF0000164E /* AppChat.swift */; };
+		B53A4DF22C7E81FE0000164E /* AppMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF12C7E81FE0000164E /* AppMessage.swift */; };
+		B5934DA82C7DCD7200A120F9 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */; };
+		B5934DAB2C7DF74B00A120F9 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = B5934DAA2C7DF74B00A120F9 /* OpenAI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B51D6E962C7DCBD200D83986 /* ChatGPT Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ChatGPT Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51D6E992C7DCBD200D83986 /* ChatGPT_CloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPT_CloneApp.swift; sourceTree = "<group>"; };
-		B51D6E9B2C7DCBD200D83986 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B51D6E9D2C7DCBD400D83986 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B51D6EA02C7DCBD400D83986 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B51D6EA22C7DCBD400D83986 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B51D6EA52C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatGPT_Clone.xcdatamodel; sourceTree = "<group>"; };
+		B53A4DEA2C7E81210000164E /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B53A4DED2C7E81AD0000164E /* ChatListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListState.swift; sourceTree = "<group>"; };
+		B53A4DEF2C7E81CF0000164E /* AppChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChat.swift; sourceTree = "<group>"; };
+		B53A4DF12C7E81FE0000164E /* AppMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMessage.swift; sourceTree = "<group>"; };
+		B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5934DAB2C7DF74B00A120F9 /* OpenAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,10 +63,11 @@
 		B51D6E982C7DCBD200D83986 /* ChatGPT Clone */ = {
 			isa = PBXGroup;
 			children = (
-				B51D6E992C7DCBD200D83986 /* ChatGPT_CloneApp.swift */,
-				B51D6E9B2C7DCBD200D83986 /* ContentView.swift */,
+				B53A4DE92C7E81120000164E /* App */,
+				B53A4DEC2C7E818E0000164E /* Models */,
+				B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */,
+				B53A4DF32C7E823E0000164E /* CoreData */,
 				B51D6E9D2C7DCBD400D83986 /* Assets.xcassets */,
-				B51D6EA22C7DCBD400D83986 /* Persistence.swift */,
 				B51D6EA42C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld */,
 				B51D6E9F2C7DCBD400D83986 /* Preview Content */,
 			);
@@ -71,6 +80,32 @@
 				B51D6EA02C7DCBD400D83986 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B53A4DE92C7E81120000164E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B51D6E992C7DCBD200D83986 /* ChatGPT_CloneApp.swift */,
+				B53A4DEA2C7E81210000164E /* AppState.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B53A4DEC2C7E818E0000164E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B53A4DED2C7E81AD0000164E /* ChatListState.swift */,
+				B53A4DEF2C7E81CF0000164E /* AppChat.swift */,
+				B53A4DF12C7E81FE0000164E /* AppMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B53A4DF32C7E823E0000164E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +124,9 @@
 			dependencies = (
 			);
 			name = "ChatGPT Clone";
+			packageProductDependencies = (
+				B5934DAA2C7DF74B00A120F9 /* OpenAI */,
+			);
 			productName = "ChatGPT Clone";
 			productReference = B51D6E962C7DCBD200D83986 /* ChatGPT Clone.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +155,9 @@
 				Base,
 			);
 			mainGroup = B51D6E8D2C7DCBD200D83986;
+			packageReferences = (
+				B5934DA92C7DF74B00A120F9 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
 			productRefGroup = B51D6E972C7DCBD200D83986 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,10 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51D6EA32C7DCBD400D83986 /* Persistence.swift in Sources */,
 				B51D6EA62C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld in Sources */,
-				B51D6E9C2C7DCBD200D83986 /* ContentView.swift in Sources */,
+				B53A4DF02C7E81CF0000164E /* AppChat.swift in Sources */,
+				B5934DA82C7DCD7200A120F9 /* ChatListViewModel.swift in Sources */,
+				B53A4DF22C7E81FE0000164E /* AppMessage.swift in Sources */,
+				B53A4DEE2C7E81AD0000164E /* ChatListState.swift in Sources */,
 				B51D6E9A2C7DCBD200D83986 /* ChatGPT_CloneApp.swift in Sources */,
+				B53A4DEB2C7E81210000164E /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B5934DA92C7DF74B00A120F9 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.2.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B5934DAA2C7DF74B00A120F9 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5934DA92C7DF74B00A120F9 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B51D6EA42C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld */ = {
