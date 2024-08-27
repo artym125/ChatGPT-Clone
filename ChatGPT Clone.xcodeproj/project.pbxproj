@@ -16,6 +16,8 @@
 		B53A4DF02C7E81CF0000164E /* AppChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DEF2C7E81CF0000164E /* AppChat.swift */; };
 		B53A4DF22C7E81FE0000164E /* AppMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF12C7E81FE0000164E /* AppMessage.swift */; };
 		B53A4DF52C7E831A0000164E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF42C7E831A0000164E /* CoreDataManager.swift */; };
+		B53A4DF82C7E838E0000164E /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF72C7E838E0000164E /* ChatListView.swift */; };
+		B53A4DFB2C7E83AF0000164E /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DFA2C7E83AF0000164E /* ChatListViewModel.swift */; };
 		B5934DA82C7DCD7200A120F9 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */; };
 		B5934DAB2C7DF74B00A120F9 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = B5934DAA2C7DF74B00A120F9 /* OpenAI */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		B53A4DEF2C7E81CF0000164E /* AppChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChat.swift; sourceTree = "<group>"; };
 		B53A4DF12C7E81FE0000164E /* AppMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMessage.swift; sourceTree = "<group>"; };
 		B53A4DF42C7E831A0000164E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		B53A4DF72C7E838E0000164E /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
+		B53A4DFA2C7E83AF0000164E /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
 		B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +69,7 @@
 		B51D6E982C7DCBD200D83986 /* ChatGPT Clone */ = {
 			isa = PBXGroup;
 			children = (
+				B53A4DF62C7E837B0000164E /* Screens */,
 				B53A4DE92C7E81120000164E /* App */,
 				B53A4DEC2C7E818E0000164E /* Models */,
 				B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */,
@@ -109,6 +114,23 @@
 				B53A4DF42C7E831A0000164E /* CoreDataManager.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		B53A4DF62C7E837B0000164E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B53A4DF92C7E839A0000164E /* ChatListScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B53A4DF92C7E839A0000164E /* ChatListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B53A4DF72C7E838E0000164E /* ChatListView.swift */,
+				B53A4DFA2C7E83AF0000164E /* ChatListViewModel.swift */,
+			);
+			path = ChatListScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +211,10 @@
 			files = (
 				B51D6EA62C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld in Sources */,
 				B53A4DF02C7E81CF0000164E /* AppChat.swift in Sources */,
+				B53A4DFB2C7E83AF0000164E /* ChatListViewModel.swift in Sources */,
 				B5934DA82C7DCD7200A120F9 /* ChatListViewModel.swift in Sources */,
 				B53A4DF22C7E81FE0000164E /* AppMessage.swift in Sources */,
+				B53A4DF82C7E838E0000164E /* ChatListView.swift in Sources */,
 				B53A4DEE2C7E81AD0000164E /* ChatListState.swift in Sources */,
 				B51D6E9A2C7DCBD200D83986 /* ChatGPT_CloneApp.swift in Sources */,
 				B53A4DF52C7E831A0000164E /* CoreDataManager.swift in Sources */,
