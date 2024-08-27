@@ -18,7 +18,8 @@
 		B53A4DF52C7E831A0000164E /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF42C7E831A0000164E /* CoreDataManager.swift */; };
 		B53A4DF82C7E838E0000164E /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DF72C7E838E0000164E /* ChatListView.swift */; };
 		B53A4DFB2C7E83AF0000164E /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DFA2C7E83AF0000164E /* ChatListViewModel.swift */; };
-		B5934DA82C7DCD7200A120F9 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */; };
+		B53A4DFE2C7E847B0000164E /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DFD2C7E847B0000164E /* ChatViewModel.swift */; };
+		B53A4E002C7E84BB0000164E /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53A4DFF2C7E84BB0000164E /* ChatView.swift */; };
 		B5934DAB2C7DF74B00A120F9 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = B5934DAA2C7DF74B00A120F9 /* OpenAI */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +36,8 @@
 		B53A4DF42C7E831A0000164E /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		B53A4DF72C7E838E0000164E /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		B53A4DFA2C7E83AF0000164E /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
-		B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		B53A4DFD2C7E847B0000164E /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		B53A4DFF2C7E84BB0000164E /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +71,9 @@
 		B51D6E982C7DCBD200D83986 /* ChatGPT Clone */ = {
 			isa = PBXGroup;
 			children = (
-				B53A4DF62C7E837B0000164E /* Screens */,
 				B53A4DE92C7E81120000164E /* App */,
+				B53A4DF62C7E837B0000164E /* Screens */,
 				B53A4DEC2C7E818E0000164E /* Models */,
-				B5934DA72C7DCD7200A120F9 /* ChatListViewModel.swift */,
 				B53A4DF32C7E823E0000164E /* CoreData */,
 				B51D6E9D2C7DCBD400D83986 /* Assets.xcassets */,
 				B51D6EA42C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld */,
@@ -120,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				B53A4DF92C7E839A0000164E /* ChatListScreen */,
+				B53A4DFC2C7E84680000164E /* ChatScreen */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -131,6 +133,15 @@
 				B53A4DFA2C7E83AF0000164E /* ChatListViewModel.swift */,
 			);
 			path = ChatListScreen;
+			sourceTree = "<group>";
+		};
+		B53A4DFC2C7E84680000164E /* ChatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				B53A4DFD2C7E847B0000164E /* ChatViewModel.swift */,
+				B53A4DFF2C7E84BB0000164E /* ChatView.swift */,
+			);
+			path = ChatScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,12 +223,13 @@
 				B51D6EA62C7DCBD400D83986 /* ChatGPT_Clone.xcdatamodeld in Sources */,
 				B53A4DF02C7E81CF0000164E /* AppChat.swift in Sources */,
 				B53A4DFB2C7E83AF0000164E /* ChatListViewModel.swift in Sources */,
-				B5934DA82C7DCD7200A120F9 /* ChatListViewModel.swift in Sources */,
+				B53A4E002C7E84BB0000164E /* ChatView.swift in Sources */,
 				B53A4DF22C7E81FE0000164E /* AppMessage.swift in Sources */,
 				B53A4DF82C7E838E0000164E /* ChatListView.swift in Sources */,
 				B53A4DEE2C7E81AD0000164E /* ChatListState.swift in Sources */,
 				B51D6E9A2C7DCBD200D83986 /* ChatGPT_CloneApp.swift in Sources */,
 				B53A4DF52C7E831A0000164E /* CoreDataManager.swift in Sources */,
+				B53A4DFE2C7E847B0000164E /* ChatViewModel.swift in Sources */,
 				B53A4DEB2C7E81210000164E /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,8 +370,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -367,6 +380,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ostapartym.ChatGPT-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -387,8 +404,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +414,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ostapartym.ChatGPT-Clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
